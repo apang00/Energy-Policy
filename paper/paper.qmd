@@ -1,14 +1,25 @@
 ---
-title: "My title"
-subtitle: "My subtitle if needed"
-author: 
-  - First author
-  - Another author
+title: "The Unintended Consequences of Energy Reduction"
+subtitle: "How an Act of Environmental Protection Led to the Deaths of Many"
+author:
+  - Alex Pang
+  - Irene Hyunh
+  - Tara Chakkithara
 thanks: "Code and data are available at: LINK."
 date: today
 date-format: long
 abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
-format: pdf
+pdf-engine: pdflatex
+format:
+  pdf:
+    documentclass: article
+    geometry:
+      - top=30mm
+      - left=20mm
+      - heightrounded
+include: false
+warning: false
+message: false
 number-sections: true
 bibliography: references.bib
 ---
@@ -24,6 +35,20 @@ library(palmerpenguins)
 
 
 # Introduction
+
+![Figure 1](../other/figures/figure1.png)
+
+The 2011 Fukushima disaster changed the relationship Japanese citizens had with nuclear energy. From the 160, 000 Fukushima residents that had to evacuate the city to the citizens who may not have been affected directly, the public as a whole turned their backs against  the entire industry [science direct]. 
+
+Before the accident, nuclear energy made up 25% of Japan’s energy market. After the accident, the market share stayed under 1.7% until 2016. The Democratic Party of Japan itself took initiative and implemented a new energy policy to “phase out nuclear power,” [intchopen] despite formerly having close ties to the industry in attempts to reduce CO2 pollution. [enpolicy one year later]
+
+Fossil fuels grew to dominate Japan’s energy market as many reactors were shut down. In 2011 itself, oil usage rose by around 85% while natural gas increased by 25%. [enpolicy one year later]
+
+This change had a huge impact on the price and consumption of electricity. Relative to the mean price of electricity in 2011, by 2013 the price of electricity had increased to over 10% and almost reached an increase of 20% by 2014. Concurrently, electricity consumption itself kept decreasing year after year as it became less affordable. [figure 1]
+
+A good reason for this market shift is that most of the fossil fuels that Japan utilizes are exported from other countries, which makes them expensive. [enpolicy one year later] The lack of nuclear power also reduced more affordable options for consumers. 
+
+The trend of increasing electricity prices and decreasing electricity consumption may persist into the future. The current government of Japan reversed the nuclear energy policy, but low public demand for nuclear energy still persists. Thus the prices will stay high as people continue to consume fossil fuels. There are also barriers to nuclear power that help to persist this trend. One barrier is the Nuclear Regulation Authority which created tougher safety regulations for reactors. Another are injunctions that citizens can bring forth to prevent the operation of nuclear reactors. After the Fukushima tragedy many courts in Japan may grant these injunctions for safety reasons.  [intchopen]
 
 You can and should cross-reference sections and sub-sections. We use @citeR and @rohan.
 
@@ -80,27 +105,6 @@ The goal of our modelling strategy is twofold. Firstly,...
 
 Here we briefly describe the Bayesian analysis model used to investigate... Background details and diagnostics are included in [Appendix -@sec-model-details].
 
-## Model set-up
-
-Define $y_i$ as the number of seconds that the plane remained aloft. Then $\beta_i$ is the wing width and $\gamma_i$ is the wing length, both measured in millimeters.  
-
-\begin{align} 
-y_i|\mu_i, \sigma &\sim \mbox{Normal}(\mu_i, \sigma) \\
-\mu_i &= \alpha + \beta_i + \gamma_i\\
-\alpha &\sim \mbox{Normal}(0, 2.5) \\
-\beta &\sim \mbox{Normal}(0, 2.5) \\
-\gamma &\sim \mbox{Normal}(0, 2.5) \\
-\sigma &\sim \mbox{Exponential}(1)
-\end{align}
-
-We run the model in R [@citeR] using the `rstanarm` package of @rstanarm. We use the default priors from `rstanarm`.
-
-
-### Model justification
-
-We expect a positive relationship between the size of the wings and time spent aloft. In particular...
-
-We can use maths by including latex between dollar signs, for instance $\theta$.
 
 
 # Results
@@ -141,8 +145,7 @@ modelsummary::modelsummary(
 # Discussion
 
 ## First discussion point {#sec-first-point}
-
-If my paper were 10 pages, then should be be at least 2.5 pages. The discussion is a chance to show off what you know and what you learnt from all this. 
+ 
 
 ## Second discussion point
 
