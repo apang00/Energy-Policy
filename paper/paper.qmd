@@ -8,7 +8,7 @@ author:
 thanks: "Code and data are available at: LINK."
 date: today
 date-format: long
-abstract: "First sentence. Second sentence. Third sentence. Fourth sentence."
+abstract: "Nuclear energy is a clean power source that produces electricity while operating with low-carbon emissions. Although nuclear power generation has its advantages, many concerns have been raised regarding its safety after the Fukushima nuclear accident of 2011. This paper analyzes the utilization of nuclear energy, the price of electricity and electricity consumption, and the temperature-mortality relationship in Japan before and after the accident. We reveal that the use of nuclear energy in Japan sharply decreased following the nuclear accident, resulting in a power shortage and surge in electricity prices across Japan. This prompted the country’s government to push an energy saving mindset to the public, and as a result, electricity consumption plummeted. However, we find that the government’s efforts created adverse effects as days with high temperatures coupled with an energy saving mindset led to a higher mortality rate. These findings prompt discussions about the true cost of energy saving."
 pdf-engine: pdflatex
 format:
   pdf:
@@ -30,7 +30,6 @@ bibliography: references.bib
 #| message: false
 
 library(tidyverse)
-library(palmerpenguins)
 ```
 
 
@@ -60,40 +59,11 @@ The remainder of this paper is structured as follows. @sec-data....
 
 Some of our data is of penguins (@fig-bills), from @palmerpenguins.
 
-```{r}
-#| label: fig-bills
-#| fig-cap: Bills of penguins
-#| echo: false
-
-ggplot(penguins, aes(x = island, fill = species)) +
-  geom_bar(alpha = 0.8) +
-  scale_fill_manual(values = c("darkorange","purple","cyan4"),
-                    guide = "none") +
-  theme_minimal() +
-  facet_wrap(~species, ncol = 1) +
-  coord_flip()
-```
 
 Talk more about it.
 
 And also planes (@fig-planes). (You can change the height and width, but don't worry about doing that until you have finished every other aspect of the paper - Quarto will try to make it look nice and the defaults usually work well once you have enough text.)
 
-```{r}
-#| label: fig-planes
-#| fig-cap: Relationship between wing length and width
-#| echo: false
-#| warning: false
-#| message: false
-
-analysis_data <- read_csv(here::here("data/analysis_data/analysis_data.csv"))
-
-analysis_data |> 
-  ggplot(aes(x = width, y = length)) +
-  geom_point(alpha = 0.8) +
-  theme_minimal() +
-  labs(x = "Wing width (mm)",
-       y = "Wing length (mm)")
-```
 
 Talk way more about it. 
 
@@ -111,33 +81,6 @@ Here we briefly describe the Bayesian analysis model used to investigate... Back
 
 Our results are summarized in @tbl-modelresults.
 
-```{r}
-#| echo: false
-#| eval: true
-#| warning: false
-#| message: false
-
-library(rstanarm)
-
-first_model <-
-  readRDS(file = here::here("models/first_model.rds"))
-```
-
-```{r}
-#| echo: false
-#| eval: true
-#| label: tbl-modelresults
-#| tbl-cap: "Explanatory models of flight time based on wing width and wing length"
-#| warning: false
-
-modelsummary::modelsummary(
-  list(
-    "First model" = first_model
-  ),
-  statistic = "mad",
-  fmt = 2
-)
-```
 
 
 
@@ -174,26 +117,6 @@ In @fig-ppcheckandposteriorvsprior-1 we implement a posterior predictive check. 
 
 In @fig-ppcheckandposteriorvsprior-2 we compare the posterior with the prior. This shows... 
 
-```{r}
-#| eval: true
-#| echo: false
-#| message: false
-#| warning: false
-#| label: fig-ppcheckandposteriorvsprior
-#| layout-ncol: 2
-#| fig-cap: "Examining how the model fits, and is affected by, the data"
-#| fig-subcap: ["Posterior prediction check", "Comparing the posterior with the prior"]
-
-pp_check(first_model) +
-  theme_classic() +
-  theme(legend.position = "bottom")
-
-posterior_vs_prior(first_model) +
-  theme_minimal() +
-  scale_color_brewer(palette = "Set1") +
-  theme(legend.position = "bottom") +
-  coord_flip()
-```
 
 ## Diagnostics
 
@@ -201,20 +124,7 @@ posterior_vs_prior(first_model) +
 
 @fig-stanareyouokay-2 is a Rhat plot. It shows... This suggests...
 
-```{r}
-#| echo: false
-#| eval: true
-#| message: false
-#| warning: false
-#| label: fig-stanareyouokay
-#| fig-cap: "Checking the convergence of the MCMC algorithm"
-#| fig-subcap: ["Trace plot", "Rhat plot"]
-#| layout-ncol: 2
 
-plot(first_model, "trace")
-
-plot(first_model, "rhat")
-```
 
 
 
@@ -222,5 +132,3 @@ plot(first_model, "rhat")
 
 
 # References
-
-
