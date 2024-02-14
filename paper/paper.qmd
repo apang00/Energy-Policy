@@ -2,7 +2,7 @@
 title: "The Unintended Consequences of Energy Reduction"
 subtitle: "How an Act of Environmental Protection Led to the Deaths of Many"
 author:
-  - Alex Pang
+  - Yi Fei Pang
   - Irene Hyunh
   - Tara Chakkithara
 thanks: "Code and data are available at: LINK."
@@ -38,7 +38,7 @@ library(palmerpenguins)
 
 ![Figure 1](../other/figures/figure1.png)
 
-The 2011 Fukushima disaster changed the relationship Japanese citizens had with nuclear energy. From the 160, 000 Fukushima residents that had to evacuate the city to the citizens who may not have been affected directly, the public as a whole turned their backs against  the entire industry [science direct]. 
+The 2011 Fukushima disaster changed the relationship Japanese citizens had with nuclear energy. From the 160, 000 Fukushima residents that had to evacuate the city to the citizens who may not have been affected directly, the public as a whole turned their backs against the entire industry [science direct]. 
 
 Before the accident, nuclear energy made up 25% of Japan’s energy market. After the accident, the market share stayed under 1.7% until 2016. The Democratic Party of Japan itself took initiative and implemented a new energy policy to “phase out nuclear power,” [intchopen] despite formerly having close ties to the industry in attempts to reduce CO2 pollution. [enpolicy one year later]
 
@@ -153,7 +153,9 @@ modelsummary::modelsummary(
 
 ## Weaknesses and next steps
 
-Weaknesses and next steps should also be included.
+A few weaknesses with the analysis comes from the limitation of data.The scope of analysis for the post-Fukushima incident and the effects of the energy policy is only Japan. There is no comparison to other countries and their markets trends after nuclear accidents such as Ukraine with the Chernobyl incident. Furthermore, the data is limited only from the Fukushima incident up until 2016 allowing for a short term analysis. The physical effects of nuclear incidents along with the economic effects of the energy policy are both issues that can use a more long term approach. Additionally, there is a lack of robustness as the analysis is fixated on the effects caused by the transition from nuclear energy to fossil fuels. However, there are other energy sources such as renewable energy which includes solar and wind energy that should be taken into consideration. 
+
+The next steps would be to find more recent data. As aforementioned, the datasets only extend until 2016 and to complete a long-term analysis, more recent Japanese energy data needs to be collected. Moreover, data from before and after other global nuclear incidents should be gathered and evalauted in comparison to Fukushima to evaluate whether the Japanese government's apporoach was the most optimal. Another step that can be taken to futher the analysis could be to explore more granular effects. For example, in addition to looking at how temperatures and strokes can be correlated (pls verify we did this?), other factors such as energy price variation and seasons or energy jobs and employment rates can be observed as well.
 
 \newpage
 
