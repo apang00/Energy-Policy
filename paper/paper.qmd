@@ -49,6 +49,10 @@ A good reason for this market shift is that most of the fossil fuels that Japan 
 
 The trend of increasing electricity prices and decreasing electricity consumption may persist into the future. The current government of Japan reversed the nuclear energy policy, but low public demand for nuclear energy still persists. Thus the prices will stay high as people continue to consume fossil fuels. There are also barriers to nuclear power that help to persist this trend. One barrier is the Nuclear Regulation Authority which created tougher safety regulations for reactors. Another are injunctions that citizens can bring forth to prevent the operation of nuclear reactors. After the Fukushima tragedy many courts in Japan may grant these injunctions for safety reasons.  [intchopen]
 
+![Figure 5](../other/figures/figure5.png)
+After the Fukushima incident, the government tried to ensure sufficient backup capacity to avoid power blackouts. While other factors could affect the saving target, the primary determinant of the saving target was a region’s dependence on nuclear power before the accident.(Kim, et al.) This caused more health issues for individuals as they were encouraged to not use AC and other cooling devices during hotter days. Previous to the implementation of the energy policy, throughout the period between 1960 and 2004, the mortality rate at over 32.2 degrees Celsius has dropped tremendously while that of between 26.7-32.3 degrees Celsius remained consistent. However, it becomes evident that after the policy implementation, at similar ranges of 25-30 degrees Celsius and over 30 degrees Celsius produced a higher mortality rate. [figure 5] 
+
+
 You can and should cross-reference sections and sub-sections. We use @citeR and @rohan.
 
 The remainder of this paper is structured as follows. @sec-data....
@@ -84,7 +88,6 @@ Our results are summarized in @tbl-modelresults.
 
 
 
-
 # Discussion
 
 ## First discussion point {#sec-first-point}
@@ -98,7 +101,7 @@ Our results are summarized in @tbl-modelresults.
 
 A few weaknesses with the analysis comes from the limitation of data.The scope of analysis for the post-Fukushima incident and the effects of the energy policy is only Japan. There is no comparison to other countries and their markets trends after nuclear accidents such as Ukraine with the Chernobyl incident. Furthermore, the data is limited only from the Fukushima incident up until 2016 allowing for a short term analysis. The physical effects of nuclear incidents along with the economic effects of the energy policy are both issues that can use a more long term approach. Additionally, there is a lack of robustness as the analysis is fixated on the effects caused by the transition from nuclear energy to fossil fuels. However, there are other energy sources such as renewable energy which includes solar and wind energy that should be taken into consideration. 
 
-The next steps would be to find more recent data. As aforementioned, the datasets only extend until 2016 and to complete a long-term analysis, more recent Japanese energy data needs to be collected. Moreover, data from before and after other global nuclear incidents should be gathered and evalauted in comparison to Fukushima to evaluate whether the Japanese government's apporoach was the most optimal. Another step that can be taken to futher the analysis could be to explore more granular effects. For example, in addition to looking at how temperatures and strokes can be correlated (pls verify we did this?), other factors such as energy price variation and seasons or energy jobs and employment rates can be observed as well.
+The next steps would be to find more recent data. As aforementioned, the datasets only extend until 2016 and to complete a long-term analysis, more recent Japanese energy data needs to be collected. Moreover, data from before and after other global nuclear incidents should be gathered and evalauted in comparison to Fukushima to evaluate whether the Japanese government's apporoach was the most optimal. Another step that can be taken to futher the analysis could be to explore more granular effects. For example, in addition to looking at how ambulance calls and heat strokes can be correlated and how increased temperature can cause higher mortality rates before and after the energy policy, other factors such as energy price variation and seasons or energy jobs and employment rates can be observed as well.
 
 \newpage
 
