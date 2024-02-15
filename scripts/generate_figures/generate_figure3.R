@@ -25,6 +25,8 @@ plot <- data |>
   theme_fivethirtyeight() +
   theme_bw() +
   geom_point(aes(y = avg_rate)) +
-  labs(x = "Policy", y = "Mortality Rate (%)")
+  labs(x = "Policy", y = "Mortality Rate (%)") +
+  labs(caption = "FIGURE 3: Mortality Rate and Energy Policy", color = "")  +
+  theme(plot.caption=element_text(hjust=0.5))
 
 ggsave("other/figures/figure3.png", plot)

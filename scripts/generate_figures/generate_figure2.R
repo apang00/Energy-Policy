@@ -1,5 +1,5 @@
 #### Preamble ####
-# Purpose: Generates Figure 1.
+# Purpose: Generates Figure 2.
 # Date: 14 February 2024
 # License: MIT
 
@@ -39,8 +39,8 @@ plot <- data |>
   geom_path(aes(y = relative_consumption), linetype = "dotted") +
   geom_point(aes(y = relative_price, color = "Price")) +
   geom_path(aes(y = relative_price), linetype="dotdash") +
-  geom_hline(yintercept = 1)  +
-  ggtitle("Relative Electricity Consumption and Price") +
-  labs(caption = "FIGURE 2", color = "")
+  geom_hline(yintercept = 1)+
+  labs(caption = "FIGURE 2: Relative Electricity Consumption and Price", color = "") +
+  theme(plot.caption=element_text(hjust=0.5))
 
 ggsave("other/figures/figure2.png", plot)

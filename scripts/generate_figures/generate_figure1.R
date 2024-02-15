@@ -1,5 +1,5 @@
 #### Preamble ####
-# Purpose: Generates Figure 2.
+# Purpose: Generates Figure 1.
 # Date: 14 February 2024
 # License: MIT
 
@@ -17,6 +17,7 @@ plot <- data |>
   geom_point(aes(y = percent_nuclear)) +
   geom_path(aes(y = percent_nuclear)) +
   labs(x = "Year", y = "Percent of Nuclear Energy") +
-  ggtitle("Domestic Energy Production")
+  labs(caption = "FIGURE 1: Domestic Nuclear Energy Production", color = "") +
+  theme(plot.caption=element_text(hjust=0.5))
 
 ggsave("other/figures/figure1.png", plot)

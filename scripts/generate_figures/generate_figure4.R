@@ -18,6 +18,8 @@ plot <- data |>
   ) +
   geom_bar(stat = "identity", fill = "lavender") +
   theme_test() +
-  labs(x = "Period", y = "Number of Heatstroke Incidents")
+  labs(x = "Period", y = "Number of Heatstroke Incidents") +
+  labs(caption = "FIGURE 4: Heatstroke Incidents from 2008 to 2015", color = "") +
+  theme(plot.caption=element_text(hjust=0.5))
 
 ggsave("other/figures/figure4.png", plot)

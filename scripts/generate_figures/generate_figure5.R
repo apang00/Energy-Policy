@@ -27,7 +27,9 @@ plot <- data |>
   geom_line(key_glyph = "point") +
   theme_bw() +
   theme(panel.background = element_rect(fill = "white")) +
-  labs(x = "Period", y = "Heatstroke Incidents", color = "Prefecture")
+  labs(x = "Period", y = "Heatstroke Incidents", color = "Prefecture") +
+  labs(caption = "FIGURE 5: Heatstroke Incidents from 2008 to 2015 in Each Prefecture")  +
+  theme(plot.caption=element_text(hjust=0.5))
 
 
 ggsave("other/figures/figure5.png", plot)
