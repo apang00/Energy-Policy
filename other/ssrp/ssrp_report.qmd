@@ -14,4 +14,18 @@ bibliography: references.bib
 
 # Report
 
+The statistical programming language R was used to acquire, clean, and process the data [@citeR]. In particular, the following R packages were used: tidyverse [@tidyverse], readxl [@readxl], haven [@haven], ggthemes [@ggthemes], and ggplot2 [@ggplot2].
 
+Three figures from *Energy Saving May Kill: Evidence from the Fukushima Nuclear Accident* by He and Tanaka (2019) were reproduced:
+
+- Figure 1 is a reproduction of Figure 1A. from He and Tanaka (2019).
+- Figure 2 is a reproduction of Figure 1B. from He and Tanaka (2019).
+- Figure 3 is a reproduction of Figure G1. from He and Tanaka (2019).
+
+![](../../other/figures/figure1.png)
+
+![](../../other/figures/figure2.png)
+![](../../other/figures/figure3.png)
+\newpage
+
+# References
