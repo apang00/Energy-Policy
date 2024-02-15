@@ -3,7 +3,7 @@ title: "The Unintended Consequences of Energy Reduction"
 subtitle: "How an Act of Environmental Protection Led to the Deaths of Many"
 author:
   - Yi Fei Pang
-  - Irene Hyunh
+  - Irene Huynh
   - Tara Chakkithara
 thanks: "Code and data are available at: https://github.com/apang00/Energy-Policy.git"
 date: today
