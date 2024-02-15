@@ -1,4 +1,4 @@
-# The Effects of Japanese Energy Saving Policies After Fukushima
+# The Unintended Consequences of Energy Reduction
 
 ## Overview
 
@@ -17,5 +17,4 @@ The repo is structured as:
 
 
 ## Statement on LLM usage
-
-~
+DeepL Translate was used to help translate Japanese characters from raw data. To view complete usage look at `other`. 
