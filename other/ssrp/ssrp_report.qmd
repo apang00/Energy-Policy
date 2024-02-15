@@ -1,17 +1,26 @@
 ---
 title: "SSRP Report based on *Energy Saving May Kill: Evidence from the Fukushima Nuclear Accident* by He and Tanaka (2019)"
 author:
-  - Yi Fei Pang
-  - Irene Huynh
   - Tara Chakkithara
+  - Irene Huynh
+  - Yi Fei Pang
+  
 thanks: "Code and data are available at: https://github.com/apang00/Energy-Policy.git"
 date: today
 date-format: long
-format: pdf
+format: 
+  pdf: 
+    documentclass: article
 number-sections: true
 bibliography: references.bib
 ---
 
-# Report
+During our analysis, we reproduced three figures of interest from "Energy Saving May Kill: Evidence from the Fukushima Nuclear Accident" by He and Tanaka (2019). As highlighted in our data section, we were particularly interested in the variables domestic energy consumption, price, nuclear production. Thus we chose to reproduce the figures 1A, 1B, and G1. 
 
+All reproductions were done using R and tidyverse. 
 
+Reproduction 1 : Figure1A
+![Domestic Nuclear Energy Production](../figures/figure1.png)
+
+Reproduction 2 : Figure1B
+![Electricity Consumption and Price Relative to 2011](../figures/figure2.png)
