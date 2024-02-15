@@ -39,8 +39,6 @@ plot <- data |>
   geom_path(aes(y = relative_consumption), linetype = "dotted") +
   geom_point(aes(y = relative_price, color = "Price")) +
   geom_path(aes(y = relative_price), linetype="dotdash") +
-  geom_hline(yintercept = 1) +
-  ggtitle("Relative Energy Consumption and Price") +
-  labs(caption = "FIGURE 1", color = "")
+  geom_hline(yintercept = 1)
 
 ggsave("other/figures/figure1.png", plot)
