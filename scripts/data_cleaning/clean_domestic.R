@@ -1,3 +1,8 @@
+#### Preamble ####
+# Purpose: Cleans energy production data in Japan.
+# Date: 14 February 2024
+# License: MIT
+
 library(tidyverse)
 
 data <- read_csv("data/raw_data/domestic.csv")

@@ -1,3 +1,8 @@
+#### Preamble ####
+# Purpose: Cleans energy price data in Japan.
+# Date: 14 February 2024
+# License: MIT
+
 # install.packages("readxl")
 # install.packages("tidyverse")
 # install.packages("haven")

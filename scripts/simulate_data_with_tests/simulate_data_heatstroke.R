@@ -1,3 +1,8 @@
+#### Preamble ####
+# Purpose: Simulates heatstroke data in Japan from 2008 to 2015.
+# Date: 14 February 2024
+# License: MIT
+
 #### Simulation for Heatstroke Analysis ####
 
 # The years for the data will be between 2008 and 2015

@@ -1,3 +1,8 @@
+#### Preamble ####
+# Purpose: Cleans temperature data in Japan.
+# Date: 14 February 2024
+# License: MIT
+
 library(tidyverse)
 library(readxl)
 

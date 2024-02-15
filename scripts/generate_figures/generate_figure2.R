@@ -1,3 +1,8 @@
+#### Preamble ####
+# Purpose: Generates Figure 2.
+# Date: 14 February 2024
+# License: MIT
+
 library(tidyverse)
 
 data <- read_csv("data/analysis_data/clean_domestic.csv")
