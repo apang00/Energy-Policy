@@ -75,3 +75,5 @@ ggplot(simulated_data, aes(x=year)) +
   theme_bw() +
   labs(title = "Relative Energy Price and Consumption", 
        x = "Year", y = "Relative Price/Consumption")
+
+#### Test data ####
