@@ -46,11 +46,12 @@ In this paper, we follow He and Tanaka’s paper (2019) to produce a reproductio
 
 The remainder of this paper is structured as follows: the Data section details the collection and processing of nuclear energy production, energy consumption, energy price, and temperature-mortality data. Additionally, the section includes discussion on the measurement of the original dataset. The following Results section displays and analyzes tables and figures that illustrate the trends found in the data. The Discussion section draws conclusions from those tables and figures and details the importance of our findings and weaknesses of our paper.
 
-![Relative Energy Consumption and Price](../other/figures/figure1.png){#fig-energy}
 
-![Mortality Rate and Policy](../other/figures/figure3.png){#fig-mortality}
 
-![Number of Heatstroke Incidents from 2008 to 2015](../other/figures/figure4.png){#fig-heatstrokeIncidents}
+
+![Figure 1](../other/figures/figure1.png)
+![Figure 3](../other/figures/figure3.png)
+![Figure 4](../other/figures/figure4.png)
 
 After the Fukushima incident, the government tried to ensure sufficient backup capacity to avoid power blackouts. While other factors could affect the saving target, the primary determinant of the saving target was a region’s dependence on nuclear power before the accident.(Kim, et al.) This caused more health issues for individuals as they were encouraged to not use AC and other cooling devices during hotter days. Previous to the implementation of the energy policy, throughout the period between 1960 and 2004, the mortality rate was significantly lower (closer to 0.87) while the mortality rate after was much higher (close to 0.95)[figure 3]. In addition, the mortality rate for heatstrokes also increased dramatically in the year 2011 more than doubling that of 2010.
 Moreover, the mortality risk caused by electricity saving is particularly high in the summer, during which the energy-saving campaigns are intensively promoted. To account for the potential “harvesting effect” or “delayed effect,” we also estimate distributed lag models on the impacts of temperature and the energy-saving policy. Taking into account this dynamic impact, it is estimated that the energy-saving campaigns could have led to nearly 7,710 premature deaths annually in Japan (Kim, et al.).
