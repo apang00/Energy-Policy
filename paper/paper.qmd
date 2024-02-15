@@ -90,9 +90,10 @@ Here we briefly describe the Bayesian analysis model used to investigate... Back
 
 
 # Results
-
-Our results are summarized in @tbl-modelresults.
-
+Based on the temperature summary data, it's observed that Summers can get quite hot with highs of over 32 degrees Celsius. That alongside rising electricity prices over the analysed period (mean > median) and an implementation of an energy conservation target. It's easy to deduce the likely hood of an extreme increase in heatstrokes with the mean people transported sitting at almost four times the median. 
+When observing data between temperature and energy usage, there should be a correlation between extreme weather and energy use. As cold weather would prompt higher usage of heaters while hot weather would prompt higher usage of AC. Post Fukushima, the energy usage did not keep up with the extreme weather which took a toll on different aspects such as higher number of heatstroke victims and increased mortality rate.
+Furthermore, with respect to energy consumption data, there is an extremely high third quantile of almost 6.5 million MWH which suggests higher ranges of energy consumption. This can be indicative of overuse of energy resources, perhaps stemming from an abrupt switch from nuclear energy to fossil fuels.
+Finally, all of this is reflective in the massive energy price fluctuations of around 13 yen per MWH to over 23 yen. These fluctuations are indicative of a very unstable energy market which can be the results of the energy source shift and the energy policy.
 
 
 

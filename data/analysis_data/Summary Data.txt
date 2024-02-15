@@ -1,0 +1,14 @@
+> summary(clean_temperature$temperature_avg, NA.rm=true)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+-13.412   6.923  15.082  14.406  21.733  32.150 
+> summary(price$price, NA.rm=true)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  13.67   15.75   16.46   17.29   18.81   23.55 
+> summary(energy$total_energy, NA.rm=true)
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+  165131  1446466  2834043  4938435  6487270 28684798 
+    NA's 
+     163 
+> summary(stroke$people_transported, NA.rm=true)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.    NA's 
+  0.000   0.000   1.000   3.842   4.000 133.000     388 
