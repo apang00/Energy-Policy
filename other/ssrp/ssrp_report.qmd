@@ -13,7 +13,7 @@ bibliography: references.bib
 
 # Report
 
-The statistical programming language R was used to acquire, clean, and process the data [@citeR]. In particular, the following R packages were used: tidyverse [@tidyverse], readxl [@readxl], haven [@haven], ggthemes [@ggthemes], and ggplot2 [@ggplot2].
+To reproduce figures from *Energy Saving May Kill: Evidence from the Fukushima Nuclear Accident* by He and Tanaka (2019), the statistical programming language R was used to acquire, clean, and process the data [@citeR]. In particular, the following R packages were used: tidyverse [@tidyverse], readxl [@readxl], haven [@haven], ggthemes [@ggthemes], and ggplot2 [@ggplot2].
 
 Three figures from *Energy Saving May Kill: Evidence from the Fukushima Nuclear Accident* by He and Tanaka (2019) were reproduced:
 
