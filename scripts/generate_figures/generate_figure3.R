@@ -12,7 +12,13 @@ data <- data |>
   group_by(year >= 2010) |>
   summarise(avg_rate = mean(dr)*100) |>
   ungroup() |>
-  rename(policy = "year >= 2010")
+  rename(policy = "year >= 2010") |>
+  mutate(
+    policy = case_when(
+      policy == FALSE ~ "Before Policy",
+      policy == TRUE ~ "Post Policy"
+    )
+  )
 
 plot <- data |>
   ggplot(aes(x = policy)) +
