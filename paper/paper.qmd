@@ -42,30 +42,20 @@ As a response to the growing public outcry, the government of Japan took swift a
 
 We find that the energy saving campaign was not the sole factor in the sharp decline in energy consumption as the price of electricity also surged. As many nuclear reactors were shut down, fossil fuels grew to dominate Japan’s energy market. In 2011, oil usage rose by an estimated 85% while natural gas increased by 25% [@energyPolicyYearLater]. This shift to predominately fossil fuel usage had a substantial impact on the price and consumption of electricity as the majority of fossil fuels utilized in Japan are imported from other countries, resulting in expensive prices [@energyPolicyYearLater]. Relative to the mean price of electricity in 2011, the price of electricity increased by over 10% in 2013 and further increased by nearly 20% in 2014 [@energyPolicyYearLater]. Consequently, electricity consumption decreased each year as the commodity became less affordable. The Japanese government was successful in reducing energy consumption; however, their energy-saving policies and campaigns may cause potential detrimental consequences to the public.
 
+The government's energy-saving policies included energy-saving targets to be met. While many factors could affect the saving target, the primary determinant of the saving target was a region’s dependence on nuclear power before the accident (Kim, et al.) This caused more health issues for individuals as they were encouraged to not use air conditioning and other cooling devices during hotter days. Prior to the implementation of the energy policy, throughout the period between 1960 and 2004, the mortality rate during high temperatures was significantly lower (closer to 0.87) while the mortality rate after was much higher (close to 0.95) [see Figure 3]. In addition, the mortality rate for heat strokes increased dramatically in the year 2011 more than doubling that of 2010.
+Moreover, the mortality risk caused by electricity saving is particularly high in the summer, during which the energy-saving campaigns are intensively promoted. To account for the potential “harvesting effect” or “delayed effect,” we also estimate distributed lag models on the impacts of temperature and the energy-saving policy. Taking into account this dynamic impact, it is estimated that the energy-saving campaigns could have led to nearly 7,710 premature deaths annually in Japan (Kim, et al.). Furthermore, there is a trend where the higher the saving targets, the higher the increase in the mortality rate during the hot days (between 25–30°C and above 30°C), but a relatively moderate increase for cold temperatures (below 0°C and 0–5°C) (Kim et. al).
+
 In this paper, we follow He and Tanaka’s paper (2019) to produce a reproduction of their findings and discuss further about Japan’s future as their government reverses their stance on nuclear energy and begins restarting the use of old power plants as a response to fossil fuel shortages and the public pressure to reduce the country’s carbon footprint. The estimand for our study is the effect of energy price on energy consumption. We analyze the major reduction in energy consumption from 2005 to 2015 caused by the decline in nuclear energy usage, the sharp increase in electricity prices, and the energy saving campaign pushed by the Japanese government in order to investigate their impact on the mortality rate related to high temperatures. We find that the mortality rate increases as energy consumption decreases. An important finding is that air conditioner usage plays a vital role in preventing deaths related to high temperatures. Therefore, the pressure to conserve energy and hence not utilize air conditioners, increases the mortality rate in Japan. 
 
 The remainder of this paper is structured as follows: the Data section details the collection and processing of nuclear energy production, energy consumption, energy price, and temperature-mortality data. Additionally, the section includes discussion on the measurement of the original dataset. The following Results section displays and analyzes tables and figures that illustrate the trends found in the data. The Discussion section draws conclusions from those tables and figures and details the importance of our findings and weaknesses of our paper.
 
-
-
-
-![Figure 1](../other/figures/figure1.png)
-![Figure 2](../other/figures/figure2.png)
-![Figure 3](../other/figures/figure3.png)
-![Figure 4](../other/figures/figure4.png)
-![Figure 5](../other/figures/figure5.png)
-
-After the Fukushima incident, the government tried to ensure sufficient backup capacity to avoid power blackouts. While other factors could affect the saving target, the primary determinant of the saving target was a region’s dependence on nuclear power before the accident.(Kim, et al.) This caused more health issues for individuals as they were encouraged to not use AC and other cooling devices during hotter days. Previous to the implementation of the energy policy, throughout the period between 1960 and 2004, the mortality rate was significantly lower (closer to 0.87) while the mortality rate after was much higher (close to 0.95)[figure 3]. In addition, the mortality rate for heatstrokes also increased dramatically in the year 2011 more than doubling that of 2010.
-Moreover, the mortality risk caused by electricity saving is particularly high in the summer, during which the energy-saving campaigns are intensively promoted. To account for the potential “harvesting effect” or “delayed effect,” we also estimate distributed lag models on the impacts of temperature and the energy-saving policy. Taking into account this dynamic impact, it is estimated that the energy-saving campaigns could have led to nearly 7,710 premature deaths annually in Japan (Kim, et al.).
-Lastly, there is a trend where the higher the saving targets, the higher the increase in the mortality rate during the hot days (between 25–30°C and above 30°C), but a relatively moderate increase for cold temperatures (below 0°C and 0–5°C) (Kim et. al).
-
-You can and should cross-reference sections and sub-sections. We use @citeR and @rohan.
-
-The remainder of this paper is structured as follows. @sec-data....
-
-
-
 # Data {#sec-data}
+
+## Sources
+
+To create our figures and reproduce figures from *Energy Saving May Kill: Evidence from the Fukushima Nuclear Accident* by He and Tanaka (2019), the statistical programming language R was used to acquire, clean, and process the data [@citeR]. In particular, the following R packages were used: tidyverse [@tidyverse], readxl [@readxl], haven [@haven], ggthemes [@ggthemes], and ggplot2 [@ggplot2].
+
+## Variables and Measurement
 
 In an attempt to understand impact of the Fukushima disaster through data we looked at the changes over time of many variables. The first variable we examined was the number of ambulance calls for heatstroke. This data was collected from the Fire and Disaster Management Agency in Japan and was a good fit for our analysis as we wanted to really wanted to study the changes in heatstroke occurrences over time.
 
@@ -79,13 +69,22 @@ Another variable we also considered was Japan’s mortality rate. We used the da
 
 Lastly we studied energy consumption (MWH), and the price of 1MWH in yen. To study these variables we used data from the Federation of Electric Power Companies of Japan (FEPC). This is data directly from the source of Japan’s domestic energy, so we preferred it over other datasets. Measuring energy consumption is easy because it has a price tag attached to it. Since most transactions occur via the internet these days, it’s pretty easy to keep track of all price and consumption data. However, a human error of records could affect the measurements. 
 
-
+\newpage
 # Results
+![](../other/figures/figure1.png)
+\newpage
+![](../other/figures/figure2.png)
+\newpage
+![](../other/figures/figure3.png)
+\newpage
+![](../other/figures/figure4.png)
+\newpage
+![](../other/figures/figure5.png)
+
 Based on the temperature summary data, it's observed that Summers can get quite hot with highs of over 32 degrees Celsius. That alongside rising electricity prices over the analysed period (mean > median) and an implementation of an energy conservation target. It's easy to deduce the likely hood of an extreme increase in heatstrokes with the mean people transported sitting at almost four times the median. 
 When observing data between temperature and energy usage, there should be a correlation between extreme weather and energy use. As cold weather would prompt higher usage of heaters while hot weather would prompt higher usage of AC. Post Fukushima, the energy usage did not keep up with the extreme weather which took a toll on different aspects such as higher number of heatstroke victims and increased mortality rate.
 Furthermore, with respect to energy consumption data, there is an extremely high third quantile of almost 6.5 million MWH which suggests higher ranges of energy consumption. This can be indicative of overuse of energy resources, perhaps stemming from an abrupt switch from nuclear energy to fossil fuels.
 Finally, all of this is reflective in the massive energy price fluctuations of around 13 yen per MWH to over 23 yen. These fluctuations are indicative of a very unstable energy market which can be the results of the energy source shift and the energy policy.
-
 
 
 # Discussion
