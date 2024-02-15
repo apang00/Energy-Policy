@@ -1,3 +1,8 @@
+#### Preamble ####
+# Purpose: Cleans nuclear energy production data in Japan.
+# Date: 14 February 2024
+# License: MIT
+
 library(tidyverse)
 library(readxl)
 library(haven)

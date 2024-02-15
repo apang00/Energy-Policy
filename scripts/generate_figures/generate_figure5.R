@@ -1,3 +1,8 @@
+#### Preamble ####
+# Purpose: Generates Figure 5.
+# Date: 14 February 2024
+# License: MIT
+
 library(tidyverse)
 library(ggthemes)
 

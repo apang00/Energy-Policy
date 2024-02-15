@@ -1,3 +1,8 @@
+#### Preamble ####
+# Purpose: Cleans population data in Japan.
+# Date: 14 February 2024
+# License: MIT
+
 library(tidyverse)
 
 data <- read.table("data/raw_data/population.txt", header = TRUE, skip = 2)
