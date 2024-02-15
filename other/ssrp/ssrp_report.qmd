@@ -1,0 +1,17 @@
+---
+title: "SSRP Report based on *Energy Saving May Kill: Evidence from the Fukushima Nuclear Accident* by He and Tanaka (2019)"
+author:
+  - Yi Fei Pang
+  - Irene Hyunh
+  - Tara Chakkithara
+thanks: "Code and data are available at: https://github.com/apang00/Energy-Policy.git"
+date: today
+date-format: long
+format: pdf
+number-sections: true
+bibliography: references.bib
+---
+
+# Report
+
+
